@@ -15,6 +15,35 @@ body {
 :root {
     --primary: #5D87FF;
     --white: #ffffff;
+    --secondary: #F8F8F8;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --text-primary: #2A3547;
+    --text-secondary: #333333;
+    --h1: 56px;
+    --h2: 42px;
+    --h3: 36px;
+    --h4: 28px;
+    --h5: 22px;
+    --h6: 18px;
+    /* Heading line-height  */
+    --h1-lh: 68px;
+    --h2-lh: 51px;
+    --h3-lh: 44px;
+    --h4-lh: 34px;
+    --h5-lh: 27px;
+    --h6-lh: 22px;
+    /* Body Text  */
+    --para-fs-16: 16px;
+    --para-fs-18: 18px;
+    --para-fs-20: 20px;
+    /* Body Text Line-height  */
+    --para-fs-16-lh: 20px;
+    --para-fs-18-lh: 22px;
+    --para-fs-20-lh: 24px;
 }
 
 h1,
