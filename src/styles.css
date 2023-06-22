@@ -44,6 +44,13 @@ body {
     --para-fs-16-lh: 20px;
     --para-fs-18-lh: 22px;
     --para-fs-20-lh: 24px;
+    --bs-success-rgb: 50, 205, 50;
+}
+
+hr {
+    border-color: #5d87ff;
+    opacity: 1;
+    margin: 2rem 0;
 }
 
 h1,
@@ -82,7 +89,7 @@ h4 {
     font-size: 14px;
     line-height: 22px;
     color: var(--primary);
-    text-indent: 30px;
+    text-indent: 0;
 }
 
 /* .search input:focus {
@@ -106,9 +113,9 @@ h4 {
     background: var(--primary);
     border: 1px solid var(--primary);
     border-radius: 30px;
-    padding: 7px 35px;
+    padding: 7px 30px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 13px;
     line-height: 17px;
 }
@@ -214,7 +221,7 @@ form .search .fa-search {
 
     .main .btn-primary,
     .main .btn-secondary {
-        padding: 10px 25px;
+        padding: 10px 30px;
     }
 }
 

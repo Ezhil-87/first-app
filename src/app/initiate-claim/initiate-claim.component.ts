@@ -34,6 +34,8 @@ export class InitiateClaimComponent {
     }
   }
 
+
+
   openModalPriorClaimSummary() {
     const modelDiv = document.getElementById('priorclaimsummary');
     if (modelDiv != null) {
