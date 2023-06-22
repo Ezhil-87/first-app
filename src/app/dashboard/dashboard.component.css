@@ -167,6 +167,10 @@
     box-shadow: 1px 9px 11px -3px #c5c5c5;
 }
 
+.search input {
+    text-indent: 30px;
+}
+
 @media (min-width: 768px) {
     .due-items .day-count {
         width: 20%;

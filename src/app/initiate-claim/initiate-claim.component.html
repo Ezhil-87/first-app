@@ -15,9 +15,9 @@
 
             <form action="#" class="mt-4">
                 <div class="row mb-3">
-                    <label for="Customer" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Customer
+                    <label for="Customer" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Customer
                         #</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
                         <div class="search">
                             <i class="fa fa-search"></i>
                             <input type="text" class="form-control">
@@ -25,56 +25,75 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Store #</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Store
+                        #</label>
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
                         <input type="text" class="form-control" id="Store">
                     </div>
                 </div>
+                <div class="w-100">
+                    <hr>
+                </div>
+
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Alternative
-                        Invoice?</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Invoice not
+                        available</label>
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
                         <div class="form-check form-switch">
                             <input class="form-check-input mt-2" type="checkbox" id="flexSwitchCheckDefault">
                         </div>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label"> Doc
+                <div class="row mb-3 justify-content-end justify-content-lg-start">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Doc
                         Type/Number/Date</label>
-                    <div class="col-12 col-lg-2 col-md-2 col-sm-3 mb-2">
-                        <select class="form-select form-control" aria-label="Default select example">
-                            <option selected="">INV</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-3 col-sm-4 mb-2">
-                        <div class="search">
-                            <i class="fa fa-search"></i>
-                            <input type="text" class="form-control">
+                    <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-3 mb-2">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected="">INV</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-4 mb-2">
+                                <div class="search">
+
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-10 col-xl-4 col-lg-4 col-md-12 col-sm-4">
+                                <input type="text" class="form-control" placeholder="DD/MM/YYY">
+                            </div>
                         </div>
+
                     </div>
-                    <div class="col-10 col-lg-3 col-md-2 col-sm-4">
-                        <input type="text" class="form-control" id="Store">
+
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 position-relative top-25 mt-3 mt-lg-0">
+                        <button type="button" class="d-sm-inline-block btn btn-sm btn-primary"
+                            (click)="openModalAddInvoice()">Retrieve Invoice</button>
                     </div>
-                    <div class="col-2 col-lg-1 col-md-1 col-sm-1">
-                        <div class="form-calendar">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                    </div>
+
+
+
                 </div>
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Roll Number</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Roll
+                        Number</label>
+                    <div class="col-12 col-xl-4 col-lg-3 col-md-6 col-sm-12">
                         <input type="text" class="form-control" id="Store">
                     </div>
                 </div>
+
+                <div class="w-100">
+                    <hr>
+                </div>
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Claim
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Claim
                         Category</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
                         <select class="form-select form-control" aria-label="Default select example">
                             <option selected>SHAW DEFECT</option>
                             <option value="1">One</option>
@@ -84,13 +103,12 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Reason Code</label>
-                    <div class="col-12 col-lg-3 col-md-3 col-sm-3 mb-2">
-                        <input type="text" class="form-control" id="Store">
-                    </div>
-                    <div class="col-12 col-lg-5 col-md-5 col-sm-3 mb-2">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Reason
+                        Code</label>
+
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-3 mb-2">
                         <select class="form-select form-control" aria-label="Default select example">
-                            <option selected="">HS-MILLING, GAPPING</option>
+                            <option selected="">Select One</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
@@ -98,30 +116,57 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">End User Claim or
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">End User Claim
+                        or
                         Customer Number
                         Not Available?</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input mt-2" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="ms-3"><button type="button" class="d-sm-inline-block btn btn-sm btn-primary"
+                                    (click)="openModalEndUserInfo()">Add End User
+                                    Information</button></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row mb-3">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label"> Associated to
+                        Global
+                        Account?</label>
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
                         <div class="form-check form-switch">
                             <input class="form-check-input mt-2" type="checkbox" id="flexSwitchCheckDefault">
                         </div>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label"> Associated to
-                        Global
-                        Account?</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                        <select class="form-select form-control" aria-label="Default select example">
-                            <option selected>NO</option>
-                            <option value="1">YES</option>
-                        </select>
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Job
+                        stopped?</label>
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input mt-2" type="checkbox" id="flexSwitchCheckDefault">
+                        </div>
                     </div>
                 </div>
+
                 <div class="row mb-3">
-                    <label for="Store" class="col-12 col-lg-3 col-md-4 col-sm-12 col-form-label">Job
-                        stopped?</label>
-                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Priority
+                        Claim</label>
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input mt-2" type="checkbox" id="flexSwitchCheckDefault">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="Store" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-form-label">Add to Watch
+                        List</label>
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-12">
                         <div class="form-check form-switch">
                             <input class="form-check-input mt-2" type="checkbox" id="flexSwitchCheckDefault">
                         </div>
@@ -129,58 +174,21 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 mt-2 text-end">
-                        <button type="button" class="d-sm-inline-block btn btn-sm btn-primary"
-                            (click)="openModalAddInvoice()">Retrieve
-                            Invoice</button>
+
+                        <a class="d-sm-inline-block btn btn-sm btn-secondary">Stop
+                            Initiate</a>
                         <a class="d-sm-inline-block btn btn-sm btn-primary mx-lg-3 mx-md-2 my-2"
                             (click)="openModalInitiateClaim()">Continue
                             Initiation</a>
-                        <a class="d-sm-inline-block btn btn-sm btn-secondary" (click)="openModalEndUserInfo()">Stop
-                            Initiate</a>
+
+
+                        <a class="d-sm-inline-block btn btn-sm btn-primary mx-lg-3 mx-md-2 my-2"
+                            (click)="openModalInitiateClaim()">Test Modal</a>
                     </div>
                 </div>
             </form>
 
-            <div class="row">
-                <div class="col-md-12 mt-3">
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col"><input type="checkbox"></th>
-                                    <th scope="col">TYPE</th>
-                                    <th scope="col">NUMBER</th>
-                                    <th scope="col">DATE</th>
-                                    <th scope="col">NUMBER</th>
-                                    <th scope="col">DATE</th>
-                                    <th scope="col">TOTAL $'S</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row"><input type="checkbox"></th>
-                                    <td>INV</td>
-                                    <td>7577923</td>
-                                    <td>06/11/2019</td>
-                                    <td>7577923</td>
-                                    <td>06/11/2019</td>
-                                    <td class="text-end">$2,500.36</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
 
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 mt-2 text-end">
-                    <a href="#" class="d-sm-inline-block btn btn-sm btn-primary">Document</a>
-                    <a href="#" class="d-sm-inline-block btn btn-sm btn-primary mx-lg-3 mx-md-2 my-2">Associated
-                        Invoice</a>
-                    <a href="#" class="d-sm-inline-block btn btn-sm btn-secondary">Remove</a>
-                </div>
-            </div>
 
         </div>
     </div>
@@ -248,14 +256,15 @@
         </div>
     </div>
 
-
     <!-- Modal Claim has been initiated -->
     <div class="modal modal-bg" id="initiateclaim" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="initiateclaimLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="initiateclaimLabel">Claim has been initiated</h5>
+                    <h5 class="modal-title text-success" id="initiateclaimLabel"> <i class="fa-check-circle fas"></i>
+                        Claim has
+                        been initiated</h5>
                     <button type="button" class="btn-close" (click)="CloseModalInitiateClaim()"
                         aria-label="Close"></button>
                 </div>
@@ -303,15 +312,10 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="d-flex justify-content-center flex-wrap">
-                                <button type="button" class="btn btn-primary mr-md-2 mb-3 mb-lg-0">Work this
+                                <button type="button" class="btn btn-primary me-md-2 mb-3 mb-lg-0">Work this
                                     Claim</button>
-                                <button type="button" class="btn btn-primary mx-md-2 mb-3 mb-lg-0">Initiate a New
+                                <button type="button" class="btn btn-primary ms-md-2 mb-3 mb-lg-0">Initiate a New
                                     Claim?</button>
-                                <button type="button" class="btn btn-primary mx-md-2 mb-3 mb-lg-0">Done</button>
-                                <button type="button" class="btn btn-secondary ms-md-2 mb-3 mb-lg-0"
-                                    (click)="CloseModalInitiateClaim()">Save
-                                    Claim
-                                    to OnBase</button>
                             </div>
                         </div>
                     </div>
@@ -337,7 +341,7 @@
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">First
                                 Name</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                     <span class="text-danger">*</span>
@@ -348,14 +352,14 @@
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">Middle
                                 Initial</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-2">
                                 <input type="text" class="form-control" id="Store">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">Last
                                 Name</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                     <span class="text-danger">*</span>
@@ -366,7 +370,7 @@
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">Company
                                 Name</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                     <span class="text-danger">*</span>
@@ -379,7 +383,7 @@
                         </div>
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">Country</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <select class="form-select form-control" aria-label="Default select example">
                                         <option selected>United states</option>
@@ -409,7 +413,7 @@
                         </div>
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">City</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                     <span class="text-danger">*</span>
@@ -418,7 +422,7 @@
                         </div>
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">State</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <select class="form-select form-control" aria-label="Default select example">
                                         <option selected>Alabama</option>
@@ -432,7 +436,7 @@
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">Postal
                                 Code</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                     <span class="text-danger">*</span>
@@ -441,7 +445,7 @@
                         </div>
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">County</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                 </div>
@@ -533,7 +537,7 @@
                         </div>
                         <div class="row mb-3">
                             <label for="Store" class="col-12 col-sm-12 col-md-4 col-lg-3 col-form-label">Email</label>
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
                                 <div class="form-input">
                                     <input type="text" class="form-control" id="Store">
                                 </div>
@@ -631,7 +635,8 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p>004069 Invoice #7577923 - 06/11/2019 (Order #504762) [OPEN A/R]</p>
+                            <h4 class="invoice-order">004069 Invoice #7577923 - 06/11/2019 (Order #504762) [OPEN A/R]
+                            </h4>
                             <div class="form-check px-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                                 <label class="form-check-label" for="flexCheckIndeterminate">
