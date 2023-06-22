@@ -13,6 +13,7 @@ import { WorkQueueComponent } from './work-queue/work-queue.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { SettingsComponent } from './settings/settings.component';
+import { ThemeStyleComponent } from './theme-style/theme-style.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SettingsComponent } from './settings/settings.component';
     WorkQueueComponent,
     BodyComponent,
     FooterComponent,
-    SettingsComponent
+    SettingsComponent,
+    ThemeStyleComponent
   ],
   imports: [
     BrowserModule,
