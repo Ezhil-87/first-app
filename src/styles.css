@@ -47,6 +47,23 @@ body {
     --bs-success-rgb: 50, 205, 50;
 }
 
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AEAEAE;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #AEAEAE;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #AEAEAE;
+}
+
 hr {
     border-color: #5d87ff;
     opacity: 1;
@@ -156,6 +173,30 @@ h4 {
 .main .form-control {
     border: 1px solid var(--primary);
     border-radius: 10px;
+}
+
+.form-switch .form-check-input {
+    height: 1.375em;
+    width: 2.75em;
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8' ><circle r='3' fill='%23fff' /></svg>")
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8' ><circle r='3' fill='%23fff' /></svg>")
+}
+
+.form-check-input {
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+}
+
+.form-select {
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' ><path fill='none' stroke='%235D87FF' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6' /></svg>")
+}
+
+.form-check-input:checked {
+    background-color: #5d87ff;
+    border-color: #5d87ff;
 }
 
 form .search {
